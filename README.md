@@ -23,7 +23,7 @@ ___________________________________
 
 ![Proyecto](assets/img/Principal.png)
 ![Proyecto](assets/img/Habilidades.png)
-![Proyecto](assets/img/contacto.png)
+![Proyecto](assets/img/Contacto.png)
 
 Espero pronto nos pongamos en contacto para un nuevo **sueño**
 
