@@ -9,67 +9,39 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- CDN Iconos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- tipo de fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
     <!-- favicon -->
      <link rel="shortcut icon" href="/assets/img/code-square.svg" type="image/x-icon">
+     <!-- hoja estilos -->
+     <link rel="stylesheet" href="styles.css">
     <title> Anahi Dzul Can</title>
 </head>
 <body>
 
     <!-- menu-var -->
-    <header class="header">
+ <header class="header">
         <div class="px-3 py-2 text-bg-dark border-bottom">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-              <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-                <i class="bi bi-code-square p-4 fs-1"></i>
+              <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto">
+                <i  id="item" class="bi bi-code-square p-4 fs-1 m-2"></i>
               </a>
               <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-                <li>
-                  <a href="#" class="nav-link text-secondary"><svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"></use></svg>
-                    Conoceme
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"></use></svg>
-                    Proyectos
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"></use></svg>
-                    Creaciones
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"></use></svg>
-                    Products
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"></use></svg>
-                    Customers
-                  </a>
-                </li>
+                <li ><a href="#presentacion" class="nav-link">Conoceme</a></li>
+                <li ><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li ><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li ><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                <li ><a href="#contacto" class="nav-link">Contacto </a></li>
               </ul>
             </div>
           </div>
-        
-        <!-- para login y sing-up -->
-        <!-- <div class="px-3 py-2 border-bottom mb-3">
-          <div class="container d-flex flex-wrap justify-content-center">
-            <div class="text-end">
-              <button type="button" class="btn btn-light text-dark me-2">Login</button>
-              <button type="button" class="btn btn-primary">Sign-up</button>
-            </div>
-          </div>
-        </div>-->
-      </header> 
+ </header> 
       
     <!-- presentación -->
      <main>
-    <div class="hero">
+    <div class="hero" id="presentacion">
         <div class="px-4 py-5 my-5 text-center">
             <img class="d-block mx-auto mb-4 rounded-circle" src="/assets/img/yo.jpg" alt="Anahí Dzul Can">
             <h1 class="display-5 fw-bold text-body-emphasis">Anahí Dzul Can</h1>
@@ -82,9 +54,8 @@
           </div>
     </div>
 
-
     <!-- Habilidades -->
-    <div class="container px-4 py-5">
+    <div id="habilidades" class="habilidades container px-4 py-5">
         <h2 class="pb-2 border-bottom">Habilidades</h2>
     
           <div class="col">
@@ -104,13 +75,12 @@
     
             </div>
           </div>
-        </div>
+    </div>
 
     <!-- cajas para proyectos -->
-    <div class="container">
-
+    <div class="Proyectos container" id="proyectos">
+      <h2 class="pb-2 border-bottom">Proyectos</h2>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
           <div class="col">
             <div class="card shadow-sm">
              <img  class="bd-placeholder-img card-imt-top"  src="/assets/img/pinterest.png" alt="Pinterest">
@@ -149,11 +119,11 @@
       </div>
       <!-- terminan cards -->
 
+
       <!-- carrusel con bootstrap -->
-    <div class="Carrusel p-4">
-
+    <div class="Carrusel container mt-5" id="testimonios">
+      <h2 class="pb-2 border-bottom">Testimonios</h2>
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-
             <div class="carousel-inner">
                 <!-- iniciacard -->
               <div class="carousel-item active">
@@ -212,30 +182,42 @@
             </button>
 
           </div>
-
     </div>
-     
       <!-- termina carrusel -->
 
 
       <!-- contacto -->
-      <div class="container my-5">
+      <div class="container my-5" id="contacto">
         <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
-          <svg class="bi mt-5 mb-3" width="48" height="48"><use xlink:href="#check2-circle"></use></svg>
-          <h1 class="text-body-emphasis">Placeholder jumbotron</h1>
-          <p class="col-lg-6 mx-auto mb-4">
-            This faded back jumbotron is useful for placeholder content. It's also a great way to add a bit of context to a page or section when no content is available and to encourage visitors to take a specific action.
-          </p>
-          <button class="btn btn-primary px-5 mb-5" type="button">
-            Call to action
-          </button>
+          <i class="bi bi-envelope-heart fs-1"></i>
+          <h1 class="text-body-emphasis">!Contactame!</h1>
+          <p class="col-lg-6 mx-auto mb-4"> Contactame para iniciar un nuevo proyecto en desarrollo web.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="mailto:anahidcan@gmail.com"><button class="btn btn btn-outline-secondary px-4 gap-3" type="button">Escribeme</button></a>
+          </div>
         </div>
       </div>
-
-
       <!-- termina contacto -->
-
     </main>
+    
+<!-- footer -->
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary">© 2024 AnahiDzulCan</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-linkedin fs-4"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="https://github.com/AnahiDzulCan"><i class="bi bi-github fs-4"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram fs-4"></i></a></li>
+        </ul>
+        <p class="text-center text-body-secondary">
+          Creado por Anahi Dzul en el Bootcamp de <a href="https://tecnolochicas.mx/">TecnolochicasPro</a></p>
+      </footer>
+
     <!-- para los atributos de js para crear un script, script = funcionalidad para los elementos,
       se necesita el donde se va ejecutar , si no la pagina crea errores. -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
